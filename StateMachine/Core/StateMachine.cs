@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 namespace States {
-	/// <typeparam name="TState">base class, that implements interface IState</typeparam>
+	/// <typeparam name="TState">base class for your states, that implements interface IState</typeparam>
 	public sealed class StateMachine<TState> : IEnumerable<TState> where TState: IState {
 		private readonly Dictionary<string, TState> registeredStatesMap;
 
